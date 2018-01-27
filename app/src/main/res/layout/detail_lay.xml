@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        layout="@layout/heroe_item_lay"/>
+
+    <TextView
+        android:id="@+id/links_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:gravity="left"
+        android:layout_marginLeft="@dimen/margin_mediun"
+        android:layout_marginTop="@dimen/margin_mediun"
+        android:text="@string/detail_links" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/margin_mediun"
+        android:layout_marginRight="@dimen/margin_mediun"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/details_bt"
+            style="@style/ButtonStyle"
+            android:text="@string/detail_details_title" />
+
+        <Button
+            android:id="@+id/wiki_bt"
+            style="@style/ButtonStyle"
+            android:layout_marginLeft="@dimen/margin_mediun"
+            android:text="@string/detail_wiki_title" />
+
+        <Button
+            android:id="@+id/comics_bt"
+            style="@style/ButtonStyle"
+            android:layout_marginLeft="@dimen/margin_mediun"
+            android:text="@string/detail_comics_title" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:gravity="left"
+        android:layout_marginLeft="@dimen/margin_mediun"
+        android:layout_marginTop="@dimen/margin_mediun"
+        android:text="@string/detail_resources" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/margin_mediun"
+        android:layout_marginRight="@dimen/margin_mediun"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/comics_list_bt"
+            style="@style/ButtonStyle"
+            android:text="@string/detail_comics_list_title" />
+
+        <Button
+            android:id="@+id/events_list_bt"
+            style="@style/ButtonStyle"
+            android:layout_marginLeft="@dimen/margin_mediun"
+            android:text="@string/detail_events_list_title" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list_rv"
+        android:layout_marginTop="@dimen/margin_mediun"
+        android:layout_marginLeft="@dimen/margin_mediun"
+        android:layout_marginRight="@dimen/margin_mediun"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</merge>
+
+
+
+

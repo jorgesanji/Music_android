@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">sample</string>
+    <string name="candidates_name">Jorge Sanmartin</string>
+    <string name="title_home">Busca tu súper-héroe</string>
+    <string name="search_hint">nombre a buscar</string>
+    <string name="detail_links">Links</string>
+    <string name="detail_resources">Resources</string>
+    <string name="detail_details_title">Details</string>
+    <string name="detail_wiki_title">Wiki</string>
+    <string name="detail_comics_title">Comics</string>
+    <string name="detail_comics_list_title">(%d) COMICS</string>
+    <string name="detail_events_list_title">(%d) EVENTOS</string>
+</resources>

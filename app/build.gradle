@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+apply from: '../config/dependencies.gradle'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        applicationId "com.jorgesanmartin.sample"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile junit
+    compile support_appcompat
+    compile support_design
+    compile support_constraints
+    compile support_cardview
+    compile support_recyclerview
+
+    // Dagger
+    compile dagger
+    annotationProcessor dagger_compiler
+    provided javax_annotations
+
+    //Rx
+    compile reactivex
+    compile reactivex_android
+
+    //Retrofit
+    compile retrofit
+    compile retrofit_converter
+    compile retrofit_rx_adapter
+    compile okhttp3_logger
+
+    //Picasso
+    compile picasso
+
+    //Dart
+    compile dart
+    provided dart_processor
+    compile henson
+    provided henson_processor
+
+    // butter_knife
+    compile butter_knife
+    annotationProcessor butter_knife_compiler
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:padding="@dimen/margin_small"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/heroe_imv"
+        android:layout_width="@dimen/thumb_image_size"
+        android:layout_height="@dimen/thumb_image_size"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/heroe_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_size_mediun"
+            android:textStyle="bold"
+            android:maxLines="2" />
+
+        <TextView
+            android:id="@+id/heroe_description_tv"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorAccent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_mediun"/>
+    </LinearLayout>
+
+</LinearLayout>
